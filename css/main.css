@@ -38,7 +38,7 @@ legend{
         font-weight: bold;
         font-size: 1.3em;
 }
-input[placeholder="Required"]{
+input::placeholder{
         text-align: right;
         font-style: italic;
         padding-right: 8px;
@@ -50,8 +50,14 @@ select {
         border-radius: 5px;
 }
 .contact-info{
-        border-top: 6px double black;
-        padding: 20px 0;
+    border-top: 2px solid black;
+    margin-top: 3px;
+    padding: 20px 0;
+}
+.form-head{
+border-bottom: 5px solid black;
+margin: 0 auto;
+width:70%;
 }
 .nlmenu{
         margin-top: 12px;
