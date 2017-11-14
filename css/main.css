@@ -1,0 +1,156 @@
+/*----------base styles-------------------------------*/
+
+body{
+    
+    font-family: 'Merriweather', serif;
+    font-size:.8em;
+    
+}
+h1{
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.main-header{
+    text-align: center;
+    color: white;
+    background: black;
+}
+p{
+    text-align: center;
+    color: rgb(119, 117, 117);
+    
+}
+label{
+    color: rgb(119, 117, 117);
+}
+.newsletter {
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+
+
+/*----------form styles----------------------------------*/
+
+fieldset {
+        border-style: none;
+}
+legend{
+        font-weight: bold;
+        font-size: 1.3em;
+}
+input[placeholder="Required"]{
+        text-align: right;
+        font-style: italic;
+}
+.contact-info input,
+select {
+        height: 40px;
+        margin-top:10px;    
+        border-radius: 5px;
+}
+.contact-info{
+        border-top: double 6px black;
+        outline-offset: 3px solid black;
+        padding: 20px 0;
+}
+.nlmenu{
+        margin-top: 12px;
+}
+input[type="checkbox"]:checked+label,
+input[type="radio"]:checked+label{
+        color: rgb(132, 218, 210);
+}
+
+ textarea{
+        min-height: 90px;
+        border-radius: 5px;
+     
+ }
+button{
+        height: 40px;
+        color: white;
+        background-color: #2B8C6D;
+        border-radius: 5px;
+        margin-top: 12px;
+         padding: 20px 0 33px;
+}
+input[id="zipcode"]{
+            width:40%;
+}
+/*input:required {
+    xbox-shadow: 4px 4px 20px rgba(44, 58, 99, 0.85);
+}*/
+
+.contact-info input,
+select,
+textarea{
+        background-color: #F2F1F1;
+}
+input:hover, textarea:hover{
+        background-color:rgb(211, 238, 229);
+        transition: all 0.5s linear;
+        border: 1px solid rgb(45, 12, 121);
+    
+}
+input:focus,
+textarea:focus{
+        background-color: rgba(80, 130, 141, 0.37);
+        transition: all 0.5s linear;
+}
+.newsletter{
+        background-color: #F2F1F1;
+}
+.newsletter input{
+        margin-right:10px;
+}
+
+
+/*----------flexbox styles-------------------------------*/
+
+.form-head,
+form{
+    display: flex;
+}
+.form-head,
+form{
+    flex-direction: column;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.flex{
+    flex-direction: column;
+    margin-top:12px;
+}
+
+@media (min-width:760px){
+    .main-form,
+    .contact-info input:not([id="zipcode"]),
+    select{
+        width:70%;
+    }
+    /*.flex{
+        border: 1px solid red;
+    }*/
+    .contact-info .flex{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact-info label{
+        align-self: center;
+    }
+    input[id="zipcode"]{
+        margin-right: auto;
+        
+    }
+    .flex label[for="zipcode"]{
+           flex : .5;
+    }
+    /*
+    .contact-info input,
+    .contact-info label {
+        border: 1px solid yellow;
+    }*/
+
+}
