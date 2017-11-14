@@ -50,7 +50,6 @@ select {
 }
 .contact-info{
         border-top: 6px double black;
-        outline-offset: 3px solid black;
         padding: 20px 0;
 }
 .nlmenu{
