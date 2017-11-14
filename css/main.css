@@ -41,6 +41,7 @@ legend{
 input[placeholder="Required"]{
         text-align: right;
         font-style: italic;
+        padding-right: 8px;
 }
 .contact-info input,
 select {
